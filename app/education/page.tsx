@@ -16,9 +16,9 @@ export default function EducationPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <GraduationCap className="h-5 w-5 text-primary" />
-              Bachelor of Science in Information Technology
+              Bachelor of Science in Information Systems
             </CardTitle>
-            <CardDescription>University Name • 2022 — Present (Expected 2026)</CardDescription>
+            <CardDescription>Naga College Foundation inc. • 2025 — Present (Expected 2026)</CardDescription>
           </CardHeader>
           <CardContent className="text-sm text-muted-foreground space-y-2">
             <p>

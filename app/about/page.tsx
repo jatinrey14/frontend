@@ -28,7 +28,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground text-sm">
             <p>
-              I am an information technology student and software developer with a strong passion 
+              I am an information systems student and software developer with a strong passion 
               for building robust backend web applications, database schemas, and clean user interfaces.
             </p>
           </CardContent>
