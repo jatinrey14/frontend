@@ -41,7 +41,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="border-t border-border/40 py-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} • Built with Next.js & Tailwind CSS
+          © 2026 • Built with Next.js & Tailwind CSS
         </footer>
       </body>
     </html>
