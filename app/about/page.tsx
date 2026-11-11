@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Cpu, Server, Database } from "lucide-react";
+import { Code, Cpu } from "lucide-react";
 
 const technicalSkills = [
   { category: "Backend Development", items: ["Node.js", "NestJS", "Express", "REST APIs"] },
@@ -65,7 +65,7 @@ export default function About() {
               <h4 className="text-sm font-semibold text-foreground">{group.category}</h4>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((skill) => (
-                  <Badge key="{skill}" variant="secondary">
+                  <Badge key={skill} variant="secondary">
                     {skill}
                   </Badge>
                 ))}
