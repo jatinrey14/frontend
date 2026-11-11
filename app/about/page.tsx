@@ -8,9 +8,9 @@ const technicalSkills = [
   { category: "Frontend & UI", items: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"] },
 ];
 
-export default function About() {
+export default function AboutPage() {
   return (
-    <div className="space-y-8 max-w-4xl mx-auto">
+    <div className="space-y-8">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">About Me</h1>
         <p className="text-muted-foreground mt-1">
@@ -29,11 +29,7 @@ export default function About() {
           <CardContent className="space-y-4 text-muted-foreground text-sm">
             <p>
               I am an information technology student and software developer with a strong passion 
-              for building robust backend web applications, robust database schemas, and clean user interfaces.
-            </p>
-            <p>
-              My coursework and personal projects focus on modern full-stack architectures, ensuring efficient 
-              server-side logic, secure authentication, and seamless integration.
+              for building robust backend web applications, database schemas, and clean user interfaces.
             </p>
           </CardContent>
         </Card>
@@ -47,8 +43,7 @@ export default function About() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground text-sm">
             <p>
-              I believe in writing maintainable, well-structured code that scales effectively. Whether configuring 
-              relational database relationships or optimizing API endpoints, quality and performance remain top priorities.
+              I believe in writing maintainable, well-structured code that scales effectively. Quality, security, and performance remain top priorities in everything I build.
             </p>
           </CardContent>
         </Card>

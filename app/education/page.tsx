@@ -1,63 +1,58 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap, Award } from "lucide-react";
 
-const educationList = [
-  {
-    degree: "Master in Information Technology",
-    institution: "Ateneo Naga University",
-    period: "2012 - 2016",
-    description: "Focused on software engineering, data structures, algorithms, and web development.",
-    achievements: ["Magna Cum Laude", "Dean's List (All Semesters)", "Capstone Project Lead"],
-  },
-  {
-    degree: "BS in Information Technology",
-    institution: "University of Nueva Caceres",
-    period: "2005 - 2010",
-    description: "Intensive program covering React, Node.js, databases, and deployment.",
-    achievements: ["Built 3 full-stack applications", "Peer Code Reviewer"],
-  },
-];
-
-export default function Education() {
+export default function EducationPage() {
   return (
-    <div className="space-y-8 max-w-3xl mx-auto">
+    <div className="space-y-8">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Education</h1>
-        <p className="text-muted-foreground mt-1">Academic background and formal training.</p>
+        <p className="text-muted-foreground mt-1">
+          My academic background, degrees, and academic milestones.
+        </p>
       </div>
 
       <div className="space-y-6">
-        {educationList.map((item, idx) => (
-          <Card key="{idx}">
-            <CardHeader className="flex items-start justify-between">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg text-primary">
-                  <GraduationCap className="h-6 w-6"/>
-                </div>
-                <div>
-                  <CardTitle className="text-xl">{item.degree}</CardTitle>
-                  <CardDescription>{item.institution}</CardDescription>
-                </div>
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {item.period}
-              </span>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">{item.description}</p>
-              <div>
-                <h4 className="text-sm font-semibold flex items-center gap-1.5 mb-2">
-                  <Award className="h-4 w-4 text-primary"/> Key Highlights
-                </h4>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  {item.achievements.map((ach, i) => (
-                    <li key={i}>{ach}</li>
-                  ))}
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <GraduationCap className="h-5 w-5 text-primary" />
+              Bachelor of Science in Information Technology
+            </CardTitle>
+            <CardDescription>University Name • 2022 — Present (Expected 2026)</CardDescription>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-2">
+            <p>
+              Focusing on software engineering, database management systems, algorithms, and modern web application development architectures.
+            </p>
+            <p className="font-medium text-foreground">Relevant Coursework:</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Data Structures & Algorithms</li>
+              <li>Advanced Database Systems</li>
+              <li>Object-Oriented Programming</li>
+              <li>Web Systems and Technologies</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Award className="h-5 w-5 text-primary" />
+              Certifications & Achievements
+            </CardTitle>
+            <CardDescription>Continuous learning and specialized training</CardDescription>
+          </CardHeader>
+          <CardContent className="text-sm text-muted-foreground space-y-3">
+            <div>
+              <p className="font-semibold text-foreground">Full-Stack Web Development Bootcamp</p>
+              <p className="text-xs">Completed hands-on training with Node.js, React, and RESTful APIs.</p>
+            </div>
+            <div>
+              <p className="font-semibold text-foreground">Dean's Lister / Academic Honors</p>
+              <p className="text-xs">Recognized for maintaining high academic standing across multiple semesters.</p>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
